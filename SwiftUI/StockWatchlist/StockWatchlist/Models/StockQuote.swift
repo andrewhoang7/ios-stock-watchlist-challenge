@@ -15,4 +15,9 @@ struct StockQuote: Codable, Sendable {
         case change = "d"
         case percentChange = "dp"
     }
+
+    var formattedPercentChange: String? {
+        guard let percentChange else { return nil }
+        return (percentChange / 100).formatted(.percent.precision(.fractionLength(2)))
+    }
 }

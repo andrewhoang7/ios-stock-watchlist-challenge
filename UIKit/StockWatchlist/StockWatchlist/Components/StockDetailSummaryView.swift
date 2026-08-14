@@ -30,9 +30,8 @@ final class StockDetailSummaryView: UIView {
         priceLabel.text = quote.currentPrice.formatted(.currency(code: "USD"))
         priceLabel.accessibilityIdentifier = AccessibilityID.stockPrice
 
-        if let change = quote.change, let percentChange = quote.percentChange {
+        if let change = quote.change, let percentText = quote.formattedPercentChange {
             let changeText = change.formatted(.currency(code: "USD"))
-            let percentText = percentChange.formatted(.percent.precision(.fractionLength(2)))
             changeLabel.text = "\(changeText) (\(percentText))"
             changeLabel.textColor = change >= 0 ? .systemGreen : .systemRed
             changeLabel.isHidden = false
@@ -46,6 +45,7 @@ final class StockDetailSummaryView: UIView {
     var displayedName: String? { nameLabel.text }
     var displayedSymbol: String? { symbolLabel.text }
     var displayedPrice: String? { priceLabel.text }
+    var displayedChange: String? { changeLabel.text }
     var isChangeVisible: Bool { !changeLabel.isHidden }
 
     private func setUpViews() {

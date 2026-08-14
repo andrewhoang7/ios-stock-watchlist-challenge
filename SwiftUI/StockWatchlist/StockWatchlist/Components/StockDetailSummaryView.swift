@@ -47,8 +47,8 @@ struct StockDetailSummaryView: View {
                     .font(.largeTitle.bold())
                     .accessibilityIdentifier(AccessibilityID.stockPrice)
 
-                if Self.shouldShowChange(in: quote), let change = quote.change, let percentChange = quote.percentChange {
-                    Text("\(change, format: .currency(code: "USD")) (\(percentChange, format: .percent.precision(.fractionLength(2))))")
+                if Self.shouldShowChange(in: quote), let change = quote.change, let percentText = quote.formattedPercentChange {
+                    Text("\(change, format: .currency(code: "USD")) (\(percentText))")
                         .font(.headline)
                         .foregroundStyle(change >= 0 ? .green : .red)
                 }
@@ -66,7 +66,7 @@ struct StockDetailSummaryView: View {
 #Preview {
     StockDetailSummaryView(
         stock: StarterStock(symbol: "AAPL", name: "Apple Inc."),
-        quote: StockQuote(currentPrice: 310.26, change: -4.94, percentChange: -0.0157),
+        quote: StockQuote(currentPrice: 310.26, change: -4.94, percentChange: -1.57),
         logoURL: nil
     )
     .padding()
