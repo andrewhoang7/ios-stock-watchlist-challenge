@@ -9,8 +9,12 @@ enum FinnhubConfiguration {
     static let baseURL = URL(string: "https://finnhub.io/api/v1")!
     static let testApiKey = "test-key"
 
+    static let uiTestingEnvironmentKey = "UI_TESTING"
+
     static var isRunningTests: Bool {
-        ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+        let environment = ProcessInfo.processInfo.environment
+        return environment["XCTestConfigurationFilePath"] != nil
+            || environment[uiTestingEnvironmentKey] != nil
     }
 
     static var apiKey: String? {

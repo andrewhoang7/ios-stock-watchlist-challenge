@@ -12,6 +12,7 @@ final class TabBarUITests: XCTestCase {
 
     func testTabSwitchingShowsWatchlistAndBrowseScreens() throws {
         let app = XCUIApplication()
+        app.launchEnvironment["UI_TESTING"] = "1"
         app.launch()
 
         XCTAssertTrue(app.descendants(matching: .any)[AccessibilityID.watchlistScreen].waitForExistence(timeout: 2))
