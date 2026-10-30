@@ -15,4 +15,7 @@ final class WatchlistStore: WatchlistStoreProvider {
     }
 
     // TODO
+    func add(_ stock: StarterStock) {
+        stocks.append(stock)
+    }
 }

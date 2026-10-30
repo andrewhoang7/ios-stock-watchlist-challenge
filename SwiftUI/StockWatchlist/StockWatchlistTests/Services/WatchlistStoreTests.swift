@@ -19,4 +19,13 @@ final class WatchlistStoreTests: XCTestCase {
 
         XCTAssertEqual(store.stocks, stocks)
     }
+    
+    private let apple = StarterStock(symbol: "AAPL", name: "Apple Inc.")
+    private let microsoft = StarterStock(symbol: "MSFT", name: "Microsoft Corporation")
+    
+    func testAddAppendsStock() {
+        let store = WatchlistStore()
+        store.add(apple)
+        XCTAssertEqual(store.stocks, [apple])
+    }
 }
