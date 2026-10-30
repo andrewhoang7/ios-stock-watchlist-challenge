@@ -27,4 +27,12 @@ final class WatchlistStore: WatchlistStoreProvider {
     func remove(_ stock: StarterStock) {
         stocks.removeAll(where: {$0.symbol == stock.symbol})
     }
+    
+    func toggle(_ stock: StarterStock) {
+        if contains(stock) {
+            remove(stock)
+        } else {
+            add(stock)
+        }
+    }
 }

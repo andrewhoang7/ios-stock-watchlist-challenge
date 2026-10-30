@@ -69,4 +69,14 @@ final class WatchlistStoreTests: XCTestCase {
         XCTAssertFalse(store.contains(apple))
     }
     
+    func testToggleAddsThenRemoves() {
+        let store = WatchlistStore()
+        
+        store.toggle(apple)
+        XCTAssertTrue(store.contains(apple))
+        
+        store.toggle(apple)
+        XCTAssertFalse(store.contains(apple))
+    }
+    
 }
