@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    let finnhubClient: any FinnhubClientProvider
+    
     var body: some View {
         TabView {
             WatchlistView()
@@ -32,6 +34,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(finnhubClient: StubbFinnhubClient())
         .environment(WatchlistStore())
 }

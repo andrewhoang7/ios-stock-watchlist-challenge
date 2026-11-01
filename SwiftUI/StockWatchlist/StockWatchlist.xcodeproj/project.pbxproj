@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		40F40434096D64E179B0F8D3 /* StarterStockCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C8F2EDC7BCD94EB3D592D3 /* StarterStockCatalogTests.swift */; };
 		41676F140F3D7B752D58B8E9 /* AccessibilityID.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DF835E601585A577382BB /* AccessibilityID.swift */; };
 		48A9468DE819B1F2E7DDB07C /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85913642AE980F69B7740BFC /* URLSessionProvider.swift */; };
+		498CBB1D3097094C00F8F2A1 /* StubbFinnhubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB1C3097094C00F8F2A1 /* StubbFinnhubClient.swift */; };
+		498CBB1F30971B9800F8F2A1 /* FinnhubClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB1E30971B9800F8F2A1 /* FinnhubClientFactory.swift */; };
+		498CBB2930971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB2830971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift */; };
 		4C158DC3E89136B5818BA55F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D640549715E02C5C29743 /* CardView.swift */; };
 		4E68D8EE56C45D7F4DE6B18B /* StockSymbolAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B6869DFE904370BA0FBE8 /* StockSymbolAccessoryView.swift */; };
 		508F60F35F04DC15C02694D2 /* FinnhubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE0EDF77821FFDD3E2CC895 /* FinnhubEndpoint.swift */; };
@@ -76,6 +79,9 @@
 		357DE44C4BF30EC9EF935423 /* FinnhubClientProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnhubClientProvider.swift; sourceTree = "<group>"; };
 		3618223EED271FFB0CF1CCA7 /* StockWatchlist.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StockWatchlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		400985A453B41D6EFF6BFD5E /* FinnhubClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnhubClientTests.swift; sourceTree = "<group>"; };
+		498CBB1C3097094C00F8F2A1 /* StubbFinnhubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbFinnhubClient.swift; sourceTree = "<group>"; };
+		498CBB1E30971B9800F8F2A1 /* FinnhubClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnhubClientFactory.swift; sourceTree = "<group>"; };
+		498CBB2830971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnhubClientFactoryTests.swift; sourceTree = "<group>"; };
 		5562924FEFE2DE24C290C76C /* WatchlistStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistStore.swift; sourceTree = "<group>"; };
 		564013EC965DF405EC82B218 /* WatchlistStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistStoreTests.swift; sourceTree = "<group>"; };
 		58C8F2EDC7BCD94EB3D592D3 /* StarterStockCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterStockCatalogTests.swift; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				2B4FD50D6DB49D901772BDF2 /* FinnhubConfiguration.swift */,
 				8CE0EDF77821FFDD3E2CC895 /* FinnhubEndpoint.swift */,
 				85913642AE980F69B7740BFC /* URLSessionProvider.swift */,
+				498CBB1C3097094C00F8F2A1 /* StubbFinnhubClient.swift */,
+				498CBB1E30971B9800F8F2A1 /* FinnhubClientFactory.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -278,6 +286,7 @@
 				F273EBC21FC927C9A6D86C95 /* Mocks */,
 				400985A453B41D6EFF6BFD5E /* FinnhubClientTests.swift */,
 				9C4067B080FB51A854E23E0C /* FinnhubEndpointTests.swift */,
+				498CBB2830971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -408,11 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498CBB1D3097094C00F8F2A1 /* StubbFinnhubClient.swift in Sources */,
 				41676F140F3D7B752D58B8E9 /* AccessibilityID.swift in Sources */,
 				4C158DC3E89136B5818BA55F /* CardView.swift in Sources */,
 				85ABB16E181306EDA3676639 /* CompanyProfile.swift in Sources */,
 				BEB77F9A991A9F5D4DFC21E6 /* ContentView.swift in Sources */,
 				B03154458669413B5B4D60B2 /* FinnhubAPIError.swift in Sources */,
+				498CBB1F30971B9800F8F2A1 /* FinnhubClientFactory.swift in Sources */,
 				67C897483BCBB362ED7B0EE7 /* FinnhubClient.swift in Sources */,
 				342DC9402C793951D39A901A /* FinnhubClientProvider.swift in Sources */,
 				1BFCBD9F919BE6DB59AE7946 /* FinnhubConfiguration.swift in Sources */,
@@ -451,6 +462,7 @@
 				BE5F196BD2FFABC46FE4E738 /* FinnhubClientTests.swift in Sources */,
 				255D365B0F3EE35A73F7CA44 /* FinnhubEndpointTests.swift in Sources */,
 				1C84936DD6F9195004D1E96A /* MetricRowViewTests.swift in Sources */,
+				498CBB2930971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift in Sources */,
 				9367B22AB9A2C75A385041AE /* MockURLSession.swift in Sources */,
 				D8861FEF2F3CFE956D7C9603 /* ModelDecodingTests.swift in Sources */,
 				40F40434096D64E179B0F8D3 /* StarterStockCatalogTests.swift in Sources */,
@@ -515,7 +527,10 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Wealthfront.StockWatchlist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,7 +571,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -604,6 +618,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -650,7 +665,10 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Wealthfront.StockWatchlist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -667,7 +685,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -722,6 +739,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
