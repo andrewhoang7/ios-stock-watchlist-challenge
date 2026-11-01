@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -113,6 +113,11 @@
 		F89CDE04DD1B0CF6900CA405 /* Finnhub.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Finnhub.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		498CBB2A3097278900F8F2A1 /* Formatting */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Formatting; sourceTree = "<group>"; };
+		498CBB2D3097296900F8F2A1 /* Formatting */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Formatting; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXGroup section */
 		0F44A5E2EFCD45E546CA81CB /* Products */ = {
 			isa = PBXGroup;
@@ -162,6 +167,7 @@
 		747A4B154953D18200D73891 /* StockWatchlist */ = {
 			isa = PBXGroup;
 			children = (
+				498CBB2D3097296900F8F2A1 /* Formatting */,
 				FB7DE87E85B9A9F2B95ADA37 /* Accessibility */,
 				B233A03BD6E38E363177CF52 /* Components */,
 				883E9269C4909431F0495E20 /* Models */,
@@ -231,6 +237,7 @@
 		9F29B3F0D3814E289AC058B5 /* StockWatchlistTests */ = {
 			isa = PBXGroup;
 			children = (
+				498CBB2A3097278900F8F2A1 /* Formatting */,
 				C228433C19ABCD3CA6C3923A /* Components */,
 				546FCAB3EE9D11A5D9776A0A /* Models */,
 				F4FF40275135ED239E4C36DF /* Networking */,
@@ -329,6 +336,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				498CBB2D3097296900F8F2A1 /* Formatting */,
+			);
 			name = StockWatchlist;
 			productName = StockWatchlist;
 			productReference = 3618223EED271FFB0CF1CCA7 /* StockWatchlist.app */;
@@ -345,6 +355,9 @@
 			);
 			dependencies = (
 				03667139F2DE864B5EC95EF2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				498CBB2A3097278900F8F2A1 /* Formatting */,
 			);
 			name = StockWatchlistTests;
 			productName = StockWatchlistTests;
