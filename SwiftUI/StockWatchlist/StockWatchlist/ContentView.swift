@@ -20,7 +20,7 @@ struct ContentView: View {
                     }
                 }
 
-            StockBrowseView()
+            StockBrowseView(finnhubClient: finnhubClient)
                 .tabItem {
                     Label {
                         Text("Browse")

@@ -8,8 +8,10 @@ import SwiftUI
 struct StockBrowseView: View {
 //    private let catalog: StarterStockCatalog
     private let stocks: [StarterStock]
-    init(catalog: StarterStockCatalogProvider = StarterStockCatalog()) {
+    private let finnhubClient: any FinnhubClientProvider
+    init(catalog: StarterStockCatalogProvider = StarterStockCatalog(), finnhubClient: any FinnhubClientProvider) {
         self.stocks = catalog.load()
+        self.finnhubClient = finnhubClient
     }
 
     var body: some View {
@@ -38,16 +40,16 @@ struct StockBrowseView: View {
             .accessibilityElement(children: .contain)
             .accessibilityIdentifier(AccessibilityID.browseScreen)
             .navigationTitle("Browse")
-            .navigationDestination(for: StarterStock.self) { stock in Text(stock.name)
+            .navigationDestination(for: StarterStock.self) { stock in
+                StockDetailView(stock: stock,
+                                finnhubClient: finnhubClient
+                )
             }
         }
     }
 }
 
-//            Color.clear
-//                .accessibilityIdentifier("browse-screen")
-//                .navigationTitle("Browse")
-
 #Preview {
-    StockBrowseView()
+    StockBrowseView(finnhubClient: StubbFinnhubClient())
+        .environment(WatchlistStore())
 }
