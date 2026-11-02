@@ -10,7 +10,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            WatchlistView()
+            WatchlistView(finnhubClient: finnhubClient)
                 .tabItem {
                     Label {
                         Text("Watchlist")

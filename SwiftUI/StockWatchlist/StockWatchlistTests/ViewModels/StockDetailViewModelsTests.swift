@@ -25,7 +25,6 @@ final class StockDetailViewModelsTests: XCTestCase {
         return message
     }
     
-    
     private func loadedContent(_ viewModel: StockDetailViewModel) -> StockDetailContent? {
         guard case let .loaded(content) = viewModel.state else {
             XCTFail("Expected loaded state, got viewModel.state")
