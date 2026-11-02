@@ -21,6 +21,7 @@
 		498CBB1D3097094C00F8F2A1 /* StubbFinnhubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB1C3097094C00F8F2A1 /* StubbFinnhubClient.swift */; };
 		498CBB1F30971B9800F8F2A1 /* FinnhubClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB1E30971B9800F8F2A1 /* FinnhubClientFactory.swift */; };
 		498CBB2930971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB2830971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift */; };
+		498CBB313097F8E600F8F2A1 /* MockFinnhubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CBB303097F8E600F8F2A1 /* MockFinnhubClient.swift */; };
 		4C158DC3E89136B5818BA55F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D640549715E02C5C29743 /* CardView.swift */; };
 		4E68D8EE56C45D7F4DE6B18B /* StockSymbolAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B6869DFE904370BA0FBE8 /* StockSymbolAccessoryView.swift */; };
 		508F60F35F04DC15C02694D2 /* FinnhubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE0EDF77821FFDD3E2CC895 /* FinnhubEndpoint.swift */; };
@@ -82,6 +83,7 @@
 		498CBB1C3097094C00F8F2A1 /* StubbFinnhubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbFinnhubClient.swift; sourceTree = "<group>"; };
 		498CBB1E30971B9800F8F2A1 /* FinnhubClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnhubClientFactory.swift; sourceTree = "<group>"; };
 		498CBB2830971D7C00F8F2A1 /* FinnhubClientFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnhubClientFactoryTests.swift; sourceTree = "<group>"; };
+		498CBB303097F8E600F8F2A1 /* MockFinnhubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFinnhubClient.swift; sourceTree = "<group>"; };
 		5562924FEFE2DE24C290C76C /* WatchlistStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistStore.swift; sourceTree = "<group>"; };
 		564013EC965DF405EC82B218 /* WatchlistStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistStoreTests.swift; sourceTree = "<group>"; };
 		58C8F2EDC7BCD94EB3D592D3 /* StarterStockCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterStockCatalogTests.swift; sourceTree = "<group>"; };
@@ -116,6 +118,8 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		498CBB2A3097278900F8F2A1 /* Formatting */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Formatting; sourceTree = "<group>"; };
 		498CBB2D3097296900F8F2A1 /* Formatting */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Formatting; sourceTree = "<group>"; };
+		498CBB323097F94F00F8F2A1 /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+		498CBB37309819B800F8F2A1 /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
@@ -167,6 +171,7 @@
 		747A4B154953D18200D73891 /* StockWatchlist */ = {
 			isa = PBXGroup;
 			children = (
+				498CBB37309819B800F8F2A1 /* ViewModels */,
 				498CBB2D3097296900F8F2A1 /* Formatting */,
 				FB7DE87E85B9A9F2B95ADA37 /* Accessibility */,
 				B233A03BD6E38E363177CF52 /* Components */,
@@ -237,6 +242,7 @@
 		9F29B3F0D3814E289AC058B5 /* StockWatchlistTests */ = {
 			isa = PBXGroup;
 			children = (
+				498CBB323097F94F00F8F2A1 /* ViewModels */,
 				498CBB2A3097278900F8F2A1 /* Formatting */,
 				C228433C19ABCD3CA6C3923A /* Components */,
 				546FCAB3EE9D11A5D9776A0A /* Models */,
@@ -283,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				C9191BBF4E4A34A8FFD57369 /* MockURLSession.swift */,
+				498CBB303097F8E600F8F2A1 /* MockFinnhubClient.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -338,6 +345,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				498CBB2D3097296900F8F2A1 /* Formatting */,
+				498CBB37309819B800F8F2A1 /* ViewModels */,
 			);
 			name = StockWatchlist;
 			productName = StockWatchlist;
@@ -358,6 +366,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				498CBB2A3097278900F8F2A1 /* Formatting */,
+				498CBB323097F94F00F8F2A1 /* ViewModels */,
 			);
 			name = StockWatchlistTests;
 			productName = StockWatchlistTests;
@@ -480,6 +489,7 @@
 				D8861FEF2F3CFE956D7C9603 /* ModelDecodingTests.swift in Sources */,
 				40F40434096D64E179B0F8D3 /* StarterStockCatalogTests.swift in Sources */,
 				5478E898DEA6B541278A3B1B /* StockDetailSummaryViewTests.swift in Sources */,
+				498CBB313097F8E600F8F2A1 /* MockFinnhubClient.swift in Sources */,
 				084218CA350AC07D6848B150 /* WatchlistStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
