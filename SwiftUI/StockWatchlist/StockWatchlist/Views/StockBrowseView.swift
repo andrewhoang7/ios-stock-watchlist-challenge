@@ -37,8 +37,6 @@ struct StockBrowseView: View {
                 .listStyle(.plain)
                 .accessibilityIdentifier(AccessibilityID.browseStockList)
             }
-            .accessibilityElement(children: .contain)
-            .accessibilityIdentifier(AccessibilityID.browseScreen)
             .navigationTitle("Browse")
             .navigationDestination(for: StarterStock.self) { stock in
                 StockDetailView(stock: stock,
@@ -46,6 +44,8 @@ struct StockBrowseView: View {
                 )
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier(AccessibilityID.browseScreen)
     }
 }
 
