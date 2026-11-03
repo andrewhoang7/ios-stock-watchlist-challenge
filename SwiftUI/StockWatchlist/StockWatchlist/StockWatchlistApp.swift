@@ -8,7 +8,6 @@ import SwiftUI
 @main
 struct StockWatchlistApp: App {
     @State private var watchlistStore = WatchlistStore()
-//    private let finnhubClient: any FinnhubClientProvider = FinnhubClient.configured()
     private let finnhubClient = FinnhubClientFactory.make()
 
     var body: some Scene {

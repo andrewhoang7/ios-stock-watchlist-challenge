@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct StockBrowseView: View {
-//    private let catalog: StarterStockCatalog
     private let stocks: [StarterStock]
     private let finnhubClient: any FinnhubClientProvider
     init(catalog: StarterStockCatalogProvider = StarterStockCatalog(), finnhubClient: any FinnhubClientProvider) {

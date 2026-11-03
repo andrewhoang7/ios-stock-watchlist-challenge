@@ -14,7 +14,6 @@ final class WatchlistStore: WatchlistStoreProvider {
         self.stocks = stocks
     }
 
-    // TODO
     func contains(_ stock: StarterStock) -> Bool {
         stocks.contains {$0.symbol == stock.symbol}
     }

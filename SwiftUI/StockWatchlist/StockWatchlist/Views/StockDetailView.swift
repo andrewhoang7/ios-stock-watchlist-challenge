@@ -84,7 +84,7 @@ struct StockDetailView: View {
                           accessibilityIdentifier: AccessibilityID.metricWeek52Low
             )
             MetricRowView(label: "Dividend yield",
-                          value: StockFormatter.price(metrics?.annualDividendYield),
+                          value: StockFormatter.percent(metrics?.annualDividendYield),
                           accessibilityIdentifier: AccessibilityID.metricDividendYield
             )
         }
