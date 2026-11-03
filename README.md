@@ -15,6 +15,7 @@ November 3, 2026
 
 
 ## Implementation Details
+- API key provided is kept out of version control, so key will need to be added to Finnhub.plist before running
 - Finnhub's `dp` value is already a percentage, so it gets divided by 100 before formatting
 - `StockFormatter` handles price and percent formatting and will show a placeholder when a value is missing
 - Accessibility identifiers were placed with the main elements so the UI tests can find them reliably
